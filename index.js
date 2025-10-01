@@ -1,6 +1,6 @@
 // 1st Floor
 let gymatoriumLock = true;
-
+gymatoriumLock= false;
 // Commit and show us to unlock the next floor's instructions
 // ----------------------------
 // 2nd Floor
@@ -9,6 +9,10 @@ let weworkItems = ["loaner laptop", "whiteboard", "conference room", "couch", "p
 let computerLabItems = ["desktop computers", "monitors", "broken laptop", "mice", "Wi-Fi router", "printer", "power strips", "headphones", "USB drives", "chairs", "desks"];
 let mprItems = ["mirrors", "speakers", "chairs", "portable stereo", "projector", "chairs", "posters"];
 
+weworkItems.shift()
+computerLabItems.push("loaner laptop")
+computerLabItems[2]="fixed laptop"
+console.log(mprItems.length)
 
 // Commit and show us to unlock the next floor's instructions
 // ----------------------------
@@ -20,6 +24,9 @@ let scoreValues = {
     "O": "Organization",
     "R": "Resilience"
 }
+scoreValues.C="Consistency"
+scoreValues.O="Ownership"
+scoreValues.E="Excellence"
 
 let afterSchoolClubs = {
     athletic: [
@@ -51,6 +58,8 @@ let afterSchoolClubs = {
         }     
     ]
 }
+afterSchoolClubs[0].club="British Football Club"
+afterSchoolClubs[1].location="Balcony"
 
 
 // Commit and show us to unlock the next floor's instructions
@@ -58,13 +67,15 @@ let afterSchoolClubs = {
 // 4th Floor
 // Uncomment the code below to begin this task
 
-// let takeCareOfPet = function(snacks, pets) => {
-//     if (Snacks[2] === "hotdogs" && pets > 10) {
-//         return "Raccoon has been appeased"
-//     } else {
-//         return "The raccoon bit you and you died of rabies."
+ function takeCareOfPet(snacks, pets){
+    if (snacks[2] === "hotdogs" && pets > 10) {
+        return "Raccoon has been appeased"
+    } else {
+        return "The raccoon bit you and you died of rabies."
     
-// }
+}
+ }
+takeCareOfPet(2,11)
 
 
 // Commit and show us to unlock the next floor's instructions
