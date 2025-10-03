@@ -81,15 +81,16 @@ takeCareOfPet(2,11)
 // Commit and show us to unlock the next floor's instructions
 // ----------------------------
 // 5th Floor
-function message(message){
-    if (snacks[2] === "hotdogs" && pets > 10) {
-        return "Raccoon has been appeased"
-    } else {
-        return "The raccoon bit you and you died of rabies."
-    
-}
- }
 
+function MSG(message){
+ let messags=[];
+ for(let i=0,i,<=5,i++){
+    message.push(messags)
+ }
+ console.log(message)
+ console.log("Open Seasame")
+}
+MSG("Escape")
 
 
 // Commit and show us to unlock the next floor's instructions
